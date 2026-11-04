@@ -1,0 +1,35 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+.vercel
+.env*
+
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary patches
+_calendar_patch/
+
+# Logs
+*.log
+
