@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thinking about trucking? — Prime Union Trucking</title>
+<meta name="description" content="Most people who start a trucking business are gone inside two years. We’d rather tell you what it takes now, including if you’re not ready.">
+<link rel="canonical" href="/getting-started">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=3cards-2">
+<link rel="stylesheet" href="/assets/longer-road.css?v=1">
+<link rel="stylesheet" href="/assets/editorial-v2.css?v=2">
+<link rel="stylesheet" href="/assets/approved-inner.css?v=1">
+<link rel="stylesheet" href="/assets/inner-finish.css?v=1">
+<!-- Paste Meta Pixel base code here -->
+</head>
+<body data-page="getting-started">
+<header class="app-header"><div class="w"><a href="/" aria-label="Prime Union Trucking home"><img src="/assets/prime-union-logo-header.png" alt="Prime Union Trucking logo" class="site-logo"></a><a class="cta" href="#contact-section">Contact us <span aria-hidden="true">↗</span></a></div></header>
+<main class="w" id="app"></main>
+<footer class="app-footer"><div class="w"><a href="/"><img src="/assets/prime-union-logo-header.png" alt="Prime Union Trucking" class="footer-logo"></a><span>One operation. A longer road.</span><a href="tel:5184071772">518-407-1772</a></div></footer>
+<script src="/assets/calendar.js?v=calendar1"></script>
+<script src="/assets/app.js?v=inner-finish-1"></script>
+</body></html>

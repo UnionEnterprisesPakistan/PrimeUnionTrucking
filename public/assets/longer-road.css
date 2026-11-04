@@ -1,0 +1,88 @@
+/* THE LONGER ROAD — distinctive corporate motion language, 2026.
+   Watermelon UI-inspired transitions, developed in native CSS/JS for this existing website.
+   Copy, forms, route architecture and Node backend remain intact. */
+:root{--bg:#101c21;--bg2:#17272a;--ink:#f6f3eb;--mut:#b1beb7;--ac:#d5ff65;--ac2:#d5ff65;--ln:#364943;color-scheme:dark}
+html{scroll-behavior:smooth}
+body{background:#101c21;color:#f6f3eb;font-family:Barlow,Arial,sans-serif}
+body:before{background:radial-gradient(65% 60% at 92% 1%,#29423d80,transparent 73%),radial-gradient(65% 70% at -18% 43%,#172b2d66,transparent 60%)}
+body:after{background-image:linear-gradient(#dce6dd08 1px,transparent 1px),linear-gradient(90deg,#dce6dd08 1px,transparent 1px);background-size:72px 72px;opacity:.65}
+#sp{background:radial-gradient(#d5ff6511,transparent 70%)}
+#pb{background:var(--ac);height:2px}
+.w{max-width:1260px;padding-inline:clamp(22px,4.7vw,70px)}
+header{border-bottom:1px solid #34453f;background:#101c21f0;backdrop-filter:blur(12px);position:relative;z-index:5}
+header .w{min-height:88px}header img{border-radius:3px;box-shadow:none;width:43px;height:43px}
+header b{font-family:Barlow,sans-serif;font-size:15px;font-weight:600;letter-spacing:.20em}
+header .cta,.cta,button.go{border-radius:3px;background:var(--ac);color:#13221b;font-family:Barlow,sans-serif;font-weight:700;font-size:12px;letter-spacing:.12em;box-shadow:none;text-transform:uppercase}
+header .cta:hover,.cta:hover,button.go:hover{box-shadow:none;background:#e4ff99;transform:translateY(-2px)}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif}p{color:var(--mut)}a{color:#d5ff65}
+.hero h1{font-size:clamp(48px,6.5vw,91px);line-height:1.02;letter-spacing:-.012em;font-weight:800;max-width:19ch;text-wrap:balance}
+.hero h1 .cy{color:var(--ac)}
+.hero p{font-size:clamp(17px,1.6vw,20px);line-height:1.65;max-width:62ch}
+.road{height:2px;opacity:.75;background:repeating-linear-gradient(90deg,var(--ac) 0 42px,transparent 42px 92px);margin-top:50px}
+.lead{font-family:Barlow,sans-serif;font-size:clamp(15px,1.5vw,19px);font-weight:600;letter-spacing:-.005em;text-transform:none;color:#dce6dd;margin:34px 0 22px}
+/* Homepage — three paths, no fourth brand panel */
+body:has(.home){background:#101c21;color:#f6f3eb;color-scheme:dark}
+body:has(.home):before{background:radial-gradient(56% 62% at 91% 5%,#354e4370,transparent),radial-gradient(58% 62% at 4% 93%,#293c3266,transparent)}
+body:has(.home):after{background-image:linear-gradient(#dce6dd08 1px,transparent 1px),linear-gradient(90deg,#dce6dd08 1px,transparent 1px);opacity:.65}
+body:has(.home) header{background:#101c21f0;border-color:#354841}
+body:has(.home) header b{color:#f6f3eb;font-size:15px}
+body:has(.home) header img{border:0}
+body:has(.home) header .cta{background:var(--ac);color:#13221b;font-weight:700;font-size:12px;border-radius:3px}
+body:has(.home) header .cta:hover{background:#e5ff9c}
+body:has(.home) main.w{max-width:1260px;padding-inline:clamp(22px,4.7vw,70px)}
+.home{padding-bottom:clamp(65px,7vw,110px)}
+.home:before{content:'PRIME UNION  /  THE LONGER ROAD';display:block;font:600 11px Barlow,sans-serif;letter-spacing:.26em;color:#b8cbbe;border-bottom:1px solid #44544a;padding:42px 0 20px}
+.home .hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.62fr);column-gap:clamp(40px,6vw,100px);align-items:end;padding:clamp(50px,6vw,95px) 0 clamp(40px,5vw,68px);position:relative}
+.home .hero:after{content:'';position:absolute;right:4%;top:10%;width:26%;aspect-ratio:1;border-radius:50%;border:1px solid #d5ff6524;box-shadow:0 0 0 32px #d5ff6508,0 0 0 75px #d5ff6504;z-index:-1;pointer-events:none}
+.home .hero h1{color:#f6f3eb;max-width:14.2ch;font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;font-size:clamp(48px,5.8vw,83px);line-height:1.00;margin:0;letter-spacing:-.017em}
+.home .hero h1 .cy{color:var(--ac)}
+.home .hero p{font-size:clamp(17px,1.35vw,19px);line-height:1.7;color:#b9c8bd;border-left:1px solid #a7c25b;padding-left:24px;margin-bottom:4px;max-width:38ch}
+.home .lead{border-top:1px solid #45564a;color:#f6f3eb;margin:0 0 27px;padding-top:24px;font-size:clamp(17px,1.7vw,21px);font-weight:500}
+.home .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,26px);margin:0}
+.home .card{background:#1a2b2d;border:1px solid #41544a;border-radius:4px;color:#f6f3eb;min-height:320px;padding:clamp(25px,2.5vw,36px);box-shadow:none;transition:transform .55s cubic-bezier(.16,1,.3,1),background .4s,border-color .4s,box-shadow .4s}
+.home .card:nth-child(2){background:#223431}.home .card:nth-child(3){background:#19272b}
+.home .card:before{background:linear-gradient(var(--ac),var(--ac)) 0 0/0 2px no-repeat;opacity:1;transition:background-size .55s cubic-bezier(.16,1,.3,1)}
+.home .card:hover:before,.home .card:focus-visible:before{background-size:100% 2px}
+.home .card:hover,.home .card:focus-visible{transform:translateY(-7px);background:#273c34;border-color:#9cb96c;box-shadow:0 24px 48px #0003;outline:none}
+.home .card i{font:600 13px Barlow,sans-serif;color:#d5ff65;letter-spacing:.16em}
+.home .card b{font:800 clamp(28px,2.6vw,38px)/1.08 'Barlow Condensed',sans-serif;color:#f6f3eb;max-width:16ch;margin:30px 0 17px}
+.home .card span{font-size:16px;line-height:1.57;color:#becbc0;max-width:34ch}
+.home .card em{color:#d5ff65;font:600 28px Barlow,sans-serif;transition:transform .4s;padding-top:18px}
+.home .card:hover em{transform:translateX(10px);color:#e4ff95}
+body:has(.home) footer{background:#101c21;color:#aebfb5;border-color:#43564b}body:has(.home) footer a{color:#d5ff65}
+/* Inner pages — alternating editorial surfaces rather than repeated dark blocks */
+body:not(:has(.home)) .hero{padding-top:20px}
+body:not(:has(.home)) .hero h1{margin-top:50px;color:#f6f3eb}
+body:not(:has(.home)) .hero p{color:#bcc9c0;font-size:19px;max-width:64ch}
+.mq{border-color:#3b4c43}.mq div{color:#a4b99b38}.mq b{color:#d5ff65}
+.stats b{color:#d5ff65}.stats span{color:#b1bfb4}
+.hub{margin:60px 0 35px;background:#17282a;border:1px solid #364a40;border-radius:4px;padding:clamp(18px,3vw,40px)}
+.gv .lb{fill:#d5ff65}.gv text{fill:#f6f3eb}.sp{stroke:#d5ff65}.ob{stroke:#6f876f}.nd rect{fill:#23372f;stroke:#9db961}.nd:hover rect{fill:#324d3c}.pl{stroke:#c6e877}
+.arc{background:#23332f;border-color:#40564a}.arc h3{color:#d5ff65}.chip{border-color:#718e52}
+.core b{background:#101c21;border-color:#a2bc6a}.core:before{border-color:#a2bc6a}.cap{color:#f5f2e8}
+.offers{gap:0;grid-template-columns:repeat(2,minmax(0,1fr));margin:60px 0;background:#f6f3eb;border:1px solid #dce6dd;border-radius:4px;padding:8px 24px;counter-reset:o}
+.offers>div{background:transparent;color:#13271f;border:0;border-bottom:1px solid #d0d9cf;border-radius:0;padding:32px 30px 32px 16px;box-shadow:none;transition:background .4s,transform .4s}
+.offers>div:nth-child(odd){border-right:1px solid #d0d9cf}
+.offers>div:before{color:#345b4420;font-size:60px;top:12px;right:24px}
+.offers>div:after{background:#7c9f40;height:2px}
+.offers>div:hover{background:#e9efdf;transform:none;border-color:#d0d9cf}
+.offers h3{font-size:29px;color:#142920}.offers p{color:#53675b;line-height:1.65}
+.sys{background:#dce6dd;border:1px solid #aebdb1;border-radius:4px;color:#142820;margin:55px 0;padding:clamp(25px,4vw,52px)}
+.sys:before{background:radial-gradient(#a5d06b55,transparent 65%);animation:none}
+.sys h2,.sys b{color:#142820}.sys p{color:#475e51}.sys .cta{background:#142820;color:#f6f3eb}
+.pos{border-left:3px solid #d5ff65;margin:64px 0;padding-left:26px}.pos p{color:#f6f3eb}
+.proof{color:#dce6dd}
+.conv{background:#192b2b;border-color:#485a4c;border-radius:4px;box-shadow:none}
+.conv:before{background:linear-gradient(90deg,transparent,#d5ff65,transparent) -60% 0/50% 100% no-repeat}
+.booking-eyebrow{color:#d5ff65}.booking-intro h2{color:#f6f3eb}.booking-intro p{color:#adbbb0}
+.booking-shell,.booking-card{border-color:#42594c!important}
+.booking-section .booking-card,.booking-section .booking-shell{background:#192b2b!important}
+.cal{border-color:#455b4d;color:#b5c7b5}
+.lnk{color:#d5ff65}
+input,select,textarea{background:#112022;color:#f6f3eb;border-color:#4b5b51;border-radius:3px}
+input:focus,select:focus,textarea:focus{border-color:#d5ff65;box-shadow:0 0 0 3px #d5ff6525}
+button.go{background:#d5ff65;color:#13221b}
+footer{border-color:#42564b;color:#adbcaf}
+@media(max-width:980px){.home .hero{grid-template-columns:1fr;gap:25px}.home .hero p{max-width:68ch}.home .cards{gap:14px}.home .card{padding:25px}}
+@media(max-width:760px){.w{padding-inline:20px}.home:before{padding:25px 0 16px}.home .hero{padding:40px 0 34px}.home .hero:after{display:none}.home .cards,.offers{grid-template-columns:1fr}.home .card{min-height:230px}.home .card b{margin:15px 0 10px}.offers{padding:0 18px}.offers>div,.offers>div:nth-child(odd){border-right:0;padding:28px 12px}.hub{padding:15px}.booking-section{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.home .card,.home .card em{transition:none!important}.home .card:hover{transform:none}}

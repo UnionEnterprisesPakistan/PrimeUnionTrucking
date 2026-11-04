@@ -7,9 +7,20 @@ data/
 *.sqlite-shm
 *.sqlite-wal
 *.db
+.env.local
+.vercel
 
 .vercel
 .env*
+
+# Temporary update folders
+_*patch/
+_fleet_theme/
+_nav_patch/
+
+# Backups
+*.backup
+*.bak
 
 # Dependencies
 node_modules/
@@ -22,14 +33,8 @@ node_modules/
 # Vercel
 .vercel/
 
-# Database
+# Local databases
+*.db
 *.sqlite
 *.sqlite3
-*.db
-
-# Temporary patches
-_calendar_patch/
-
-# Logs
-*.log
 

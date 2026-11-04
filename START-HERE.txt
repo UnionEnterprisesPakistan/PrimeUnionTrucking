@@ -1,0 +1,19 @@
+PRIME UNION TRUCKING — COMPLETE WEBSITE (FRONTEND + BACKEND)
+
+This is ONE Node.js project. The public folder contains the unchanged original Claude frontend.
+The server.js file contains the Express + SQLite backend.
+
+WINDOWS POWERSHELL:
+1. Open PowerShell inside prime-union-fullstack
+2. npm install
+3. Copy-Item .env.example .env
+4. npm run dev
+5. Open http://localhost:3000
+
+PAGES:
+/   /owner-operator   /fleet   /getting-started
+
+Forms POST to /api/lead. Database created at ./data/leads.sqlite.
+To send email, fill SMTP variables in .env.
+Calendar provider is not yet connected; do not claim it is working.
+Do NOT open public/index.html directly from file explorer; run the Node server.

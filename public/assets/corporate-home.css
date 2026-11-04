@@ -1,0 +1,38 @@
+/* Prime Union — corporate editorial homepage, phase 1.
+   Interaction patterns adapted from Watermelon UI's motion-first visual language.
+   No React runtime / Watermelon package is installed; existing JS and backend preserved. */
+body:has(.home){background:#f5f7fa;color:#0b213c;color-scheme:light}
+body:has(.home):before{background:radial-gradient(65% 58% at 91% 0%,#dce8f3,transparent 72%);z-index:-3}
+body:has(.home):after{background-image:linear-gradient(#0b213c07 1px,transparent 1px),linear-gradient(90deg,#0b213c07 1px,transparent 1px);opacity:.8}
+body:has(.home) #sp{display:none}
+body:has(.home) header{border-color:#d9e2ec;background:#fffdfb;position:relative;z-index:3}
+body:has(.home) header .w{min-height:76px}
+body:has(.home) header b{color:#09213d;font-family:Barlow,sans-serif;font-size:15px;letter-spacing:.12em}
+body:has(.home) header img{box-shadow:none;border:1px solid #dae2eb}
+body:has(.home) header .cta{background:#0c2948;border-radius:4px;color:#fff;box-shadow:none;font-family:Barlow,sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em}
+body:has(.home) header .cta:hover{background:#146b84;box-shadow:none}
+body:has(.home) main.w{max-width:1230px;padding-inline:clamp(20px,5vw,65px)}
+.home{padding:0 0 clamp(45px,6vw,85px);position:relative}
+.home:before{content:'PRIME UNION  /  TRUCKING OPERATIONS';display:block;color:#5e7185;letter-spacing:.23em;font:600 11px Barlow,sans-serif;border-bottom:1px solid #d6e0e8;padding:clamp(30px,4vw,52px) 0 17px}
+.home .hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,.62fr);column-gap:clamp(35px,6vw,90px);align-items:end;padding:clamp(38px,4.8vw,70px) 0 clamp(38px,4vw,55px)}
+.home .hero h1{max-width:16ch;margin:0;font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;font-size:clamp(43px,5.4vw,78px);line-height:1.01;letter-spacing:-.015em;color:#082441;text-wrap:balance}
+.home .hero h1 .cy{color:#107d96}
+.home .hero p{margin:0 0 8px;color:#52667c;font-size:clamp(16px,1.35vw,19px);line-height:1.6;max-width:37ch;border-left:3px solid #0c90aa;padding:0 0 0 23px}
+.home + .road{display:none}
+.home .lead{margin:5px 0 24px;border-top:1px solid #cdd9e5;padding-top:24px;color:#0a2948;font:700 clamp(18px,2.3vw,27px)/1.25 'Barlow Condensed';text-transform:none;letter-spacing:.005em}
+.home .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.8vw,24px);margin:0}
+.home .card{min-height:clamp(275px,24vw,335px);border:1px solid #d3dee7;background:#fff;border-radius:7px;padding:clamp(23px,2.6vw,35px);box-shadow:0 12px 28px #132f5010;transform:translateY(0);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s,border-color .35s;isolation:isolate}
+.home .card:before{opacity:1;background:linear-gradient(90deg,#128ba4,#128ba4) top left/0 3px no-repeat;transition:background-size .55s cubic-bezier(.2,.8,.2,1)}
+.home .card:hover:before,.home .card:focus-visible:before{background-size:100% 3px}
+.home .card:hover,.home .card:focus-visible{transform:translateY(-6px);border-color:#86b7c7;box-shadow:0 20px 52px #102a4830;outline:2px solid transparent}
+.home .card i{font:700 12px Barlow,sans-serif;letter-spacing:.16em;color:#127a94}
+.home .card b{font:800 clamp(25px,2.5vw,35px)/1.06 'Barlow Condensed',sans-serif;color:#0b2644;margin:28px 0 17px;max-width:15ch}
+.home .card span{color:#586d81;font-size:16px;line-height:1.55;max-width:31ch}
+.home .card em{margin-top:auto;color:#0b2947;font:600 30px Barlow,sans-serif;padding-top:20px;align-self:flex-start;transition:transform .35s,color .35s}
+.home .card:hover em{transform:translateX(11px);color:#0e94ae}
+body:has(.home) footer{background:#092540;border-color:#092540;color:#d7e2eb}
+body:has(.home) footer a{color:#d8f2f6}
+body:has(.home) .wd>i{animation-duration:.65s}
+@media(max-width:950px){.home .hero{grid-template-columns:1fr;gap:26px}.home .hero p{max-width:65ch}.home .cards{gap:12px}.home .card{padding:23px}}
+@media(max-width:760px){.home:before{padding-top:25px}.home .hero{padding-top:32px}.home .cards{grid-template-columns:1fr}.home .card{min-height:210px}.home .card b{margin:15px 0 10px;max-width:none}.home .card span{max-width:none}.home .lead{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){.home .card,.home .card em,.home .card:before{transition:none!important}.home .card:hover{transform:none}}

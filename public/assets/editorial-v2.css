@@ -1,0 +1,74 @@
+/* PRIME UNION / THE LONGER ROAD V2 — real layout rework, not a recolor.
+   Existing service descriptions, forms and API routes deliberately preserved. */
+:root{--bg:#111917;--bg2:#1c2722;--ink:#f4f2e9;--mut:#b9c5b9;--ac:#c8f46b;--ac2:#c8f46b;--ln:#3c4b41}
+body,body:has(.home){background:#111917;color:#f4f2e9}
+body:before,body:after,body:has(.home):before,body:has(.home):after{display:none}
+#sp,.road,.mq,.stats{display:none!important}
+#pb{height:2px}
+.w,body:has(.home) main.w{max-width:1380px;padding-inline:clamp(20px,5vw,82px)}
+header,body:has(.home) header{background:#111917;border-bottom:1px solid #39463e;backdrop-filter:none}
+header .w{min-height:82px}
+header b{font-size:15px;letter-spacing:.14em}
+header .cta{background:transparent!important;border:1px solid #a5b79f;color:#f4f2e9!important;padding-inline:19px;border-radius:99px;font-size:12px}
+header .cta:hover{border-color:#c8f46b;color:#c8f46b!important;box-shadow:none}
+footer,body:has(.home) footer{background:#111917;border-color:#39463e;color:#aebdb0}
+footer a,body:has(.home) footer a{color:#d9e8cf}
+/* Homepage is a split editorial cover, followed by a featured large choice and two smaller choices */
+.home:before{content:none}
+.home{padding:0 0 75px}
+.home .hero{display:grid;grid-template-columns:minmax(0,1.26fr) minmax(300px,.72fr);align-items:center;gap:clamp(30px,6vw,110px);min-height:510px;padding:70px 0 75px;position:relative}
+.home .hero:after{display:none}
+.home .hero:before{content:'01  /  PRIME UNION';display:block;grid-column:1/-1;position:absolute;top:38px;left:0;font:600 13px Barlow,sans-serif;letter-spacing:.11em;color:#b9c9b5}
+.home .hero h1{font-family:Barlow,Arial,sans-serif;font-weight:600;font-size:clamp(45px,5.15vw,79px);line-height:1.06;letter-spacing:-.048em;max-width:16ch;margin:20px 0 0;text-wrap:pretty}
+.home .hero h1 .cy{color:#c8f46b}
+.home .hero p{border:0;padding:28px 0 0;margin:0;max-width:43ch;color:#c3cdc1;font-size:clamp(17px,1.45vw,20px);line-height:1.74;align-self:end}
+.home .hero p:before{content:'WHAT WE DO';display:block;margin-bottom:18px;color:#c8f46b;font:600 12px Barlow,sans-serif;letter-spacing:.15em}
+.home .lead{padding:28px 0 30px;margin:0;border-top:1px solid #5c6c5d;font:600 clamp(23px,2.5vw,36px)/1.19 Barlow,sans-serif;max-width:29ch;letter-spacing:-.025em;color:#f5f3ea}
+.home .cards{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:repeat(2,minmax(220px,1fr));gap:18px;margin:0;align-items:stretch}
+.home .card{min-height:0;position:relative;overflow:hidden;background:#e6ebdf!important;color:#15231b;border:1px solid #dce5d5;border-radius:18px;padding:clamp(26px,3.1vw,48px);display:flex;flex-direction:column;justify-content:flex-start;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .45s}
+.home .card-owner{grid-row:1/3;background:#d5e9c0!important;min-height:465px}
+.home .card-fleet{background:#f2f0e7!important}
+.home .card-start{background:#dce6dd!important}
+.home .card:before{content:none}
+.home .card:after{content:'↗';position:absolute;right:32px;top:30px;font:400 33px Barlow,sans-serif;color:#163323;transition:transform .3s}
+.home .card:hover:after{transform:translate(5px,-5px)}
+.home .card:hover,.home .card:focus-visible{transform:translateY(-4px);border-color:#a5bf9c;box-shadow:0 18px 42px #0003;background:#e6ebdf!important}
+.home .card i{font:normal 37px/1 sans-serif;font-style:normal;letter-spacing:0;display:inline-grid;place-items:center;background:#f8faf2;border:1px solid #cfdbcd;width:70px;height:70px;border-radius:20px}
+.home .card b{color:#182820;font:600 clamp(29px,2.55vw,43px)/1.08 Barlow,sans-serif;letter-spacing:-.035em;max-width:16ch;margin:auto 0 18px;padding-top:40px}
+.home .card span{color:#485e4f;font:400 clamp(16px,1.32vw,18px)/1.58 Barlow,sans-serif;max-width:38ch}
+.home .card em{display:none}
+.home .card-owner b{font-size:clamp(38px,3.5vw,55px);max-width:12ch}
+.home .card-owner span{max-width:28ch}
+/* Inner pages: large, editorial hero, clear prose, alternating composition. */
+body:not(:has(.home)) main.w{max-width:1240px}
+body:not(:has(.home)) .hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(250px,.75fr);gap:60px;align-items:end;padding:85px 0 90px;border-bottom:1px solid #47584c}
+body:not(:has(.home)) .hero h1{margin:0;color:#f6f3eb;font:600 clamp(47px,5.3vw,77px)/1.07 Barlow,sans-serif;letter-spacing:-.04em;max-width:15ch}
+body:not(:has(.home)) .hero p{margin:0 0 6px;color:#c9d2c7;line-height:1.75;font-size:19px;max-width:44ch}
+body:not(:has(.home)) .hero p:before{content:'THE WORK BEHIND THE WHEELS';display:block;font:600 12px Barlow,sans-serif;letter-spacing:.12em;color:#c8f46b;margin-bottom:20px}
+.hub{margin:70px 0 48px;border:1px solid #42584a;background:#1b2922;border-radius:18px;padding:clamp(22px,4vw,48px)}
+.gv .lb{fill:#c8f46b}.gv text{fill:#eff5ea}.sp{stroke:#c8f46b}.nd rect{fill:#24382d;stroke:#96b180}
+.cap{font:500 clamp(23px,2.4vw,32px)/1.25 Barlow,sans-serif;letter-spacing:-.025em;max-width:45ch}
+/* Offerings aren't a grid of sales cards; they are a numbered operations ledger. */
+.offers{display:block;background:#f4f2e9;padding:20px clamp(24px,5vw,70px);border:0;border-radius:18px;margin:70px 0}
+.offers>div,.offers>div:nth-child(odd){display:grid;grid-template-columns:minmax(0,.54fr) minmax(0,1fr);column-gap:clamp(30px,5vw,80px);padding:34px 0;border:0;border-bottom:1px solid #ccd5cb;background:transparent;position:relative;min-height:110px;align-items:start}
+.offers>div:last-child{border-bottom:0}
+.offers>div:before{content:counter(o,decimal-leading-zero);position:absolute;top:39px;left:0;font:500 13px Barlow,sans-serif;color:#66836d}
+.offers>div:after{display:none}
+.offers h3{font:600 clamp(25px,2.5vw,33px)/1.18 Barlow,sans-serif;letter-spacing:-.03em;color:#1a3023;margin:0;padding-left:45px;position:relative}
+.offers p{font:400 17px/1.7 Barlow,sans-serif;color:#4b6252;margin:0;max-width:65ch}
+.offers>div:hover{transform:none;background:transparent}
+.sys{background:#e0e9dd;color:#1c3226;border:0;border-radius:18px;padding:clamp(28px,5vw,65px);margin:65px 0}
+.sys h2{font:600 clamp(35px,4vw,56px)/1.04 Barlow,sans-serif;letter-spacing:-.04em;margin-bottom:30px;max-width:18ch}
+.sys p{font:400 18px/1.7 Barlow,sans-serif;max-width:70ch;margin-bottom:20px;color:#48604f}
+.sys b{color:#1b3124}
+.pos{margin:75px 0 30px;border-left:4px solid #c8f46b;padding-left:26px}.pos p{font:500 clamp(27px,3vw,43px)/1.2 Barlow,sans-serif;letter-spacing:-.03em;max-width:37ch}
+.proof{font:500 17px/1.6 Barlow,sans-serif;color:#bfcdbd}
+.conv,.booking-section{background:#1d2b24;border:1px solid #4b5c4e;border-radius:18px;padding:clamp(26px,4.3vw,56px);margin:65px 0}
+.conv:before{display:none}
+.conv h2,.booking-intro h2{font:600 clamp(32px,3.9vw,53px)/1.09 Barlow,sans-serif;letter-spacing:-.035em}
+.booking-eyebrow{color:#c8f46b}
+/* Remove unnecessary miniature labels from conversion card, retain all fields. */
+.booking-section .booking-card,.booking-section .booking-shell{border-radius:12px}
+@media(max-width:950px){.home .hero{grid-template-columns:1fr;min-height:auto;gap:25px;padding-top:90px}.home .hero p{max-width:65ch}.home .cards{grid-template-columns:1fr 1fr;grid-template-rows:auto}.home .card-owner{grid-column:1/-1;grid-row:auto;min-height:300px}.home .card-fleet,.home .card-start{min-height:300px}body:not(:has(.home)) .hero{grid-template-columns:1fr;gap:30px}}
+@media(max-width:650px){.home .hero h1{font-size:clamp(42px,10vw,62px)}.home .cards{grid-template-columns:1fr}.home .card-owner,.home .card-fleet,.home .card-start{grid-column:auto;min-height:235px}.home .card b,.home .card-owner b{font-size:32px;padding-top:25px}.home .card i{width:56px;height:56px;font-size:29px}.home .card:after{font-size:26px}.offers>div,.offers>div:nth-child(odd){grid-template-columns:1fr;gap:13px;padding:25px 0}.offers h3{padding-left:37px}.offers>div:before{top:29px}.offers p{padding-left:37px}.home .hero p{font-size:17px}body:not(:has(.home)) .hero{padding:55px 0 65px}body:not(:has(.home)) .hero h1{font-size:45px}}
+@media(prefers-reduced-motion:reduce){.home .card:hover,.home .card:focus-visible{transform:none}}

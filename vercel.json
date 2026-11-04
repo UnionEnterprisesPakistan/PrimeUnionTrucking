@@ -2,6 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "outputDirectory": "public",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {"source":"/owner-operator", "destination":"/owner-operator.html"},
+    {"source":"/fleet", "destination":"/fleet.html"},
+    {"source":"/getting-started", "destination":"/getting-started.html"}
+  ]
 }
