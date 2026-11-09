@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
 const root = path.join(ROOT, 'public');
 app.use('/assets', express.static(path.join(root, 'assets'), { immutable: false, maxAge: 0, etag: true }));
-const pages = { '/': 'index', '/owner-operator': 'owner-operator', '/fleet': 'fleet', '/getting-started': 'getting-started' };
+const pages = { '/': 'index', '/owner-operator': 'owner-operator', '/fleet': 'fleet', '/getting-started': 'getting-started', '/privacy-policy': 'privacy-policy' };
 for (const [url, filename] of Object.entries(pages)) app.get(url, (_req, res) => res.sendFile(path.join(root, `${filename}.html`)));
 
 // Local development routes for the Vercel booking functions.
