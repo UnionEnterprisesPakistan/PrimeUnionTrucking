@@ -1,4 +1,4 @@
-const L="/assets/logo.jpg",ENDPOINT="/api/lead",CALURL="";/* set ENDPOINT to your form-handling URL */
+const L="/assets/put-icon.png",ENDPOINT="/api/lead",CALURL="";/* set ENDPOINT to your form-handling URL */
 document.documentElement.classList.add("js");document.getElementById("lg").src="/assets/prime-union-logo-header.png";
 const H=(a,b)=>`<section class="hero inner-hero"><h1>${a}</h1></section>`;
 const SV=arcs=>{const cx=380,cy=235,rx=300,ry=170;let k=0,o=`<ellipse class="ob" cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}"/>`,nd="";
